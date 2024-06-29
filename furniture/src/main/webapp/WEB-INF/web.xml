@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>UserControllers</servlet-name>
+        <servlet-class>com.example.controllers.UserControllers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserControllers</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FurnitureController</servlet-name>
+        <servlet-class>com.example.controllers.FurnitureController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FurnitureController</servlet-name>
+        <url-pattern>/furniture</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RentalController</servlet-name>
+        <servlet-class>com.example.controllers.RentalController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RentalController</servlet-name>
+        <url-pattern>/rental</url-pattern>
+    </servlet-mapping>
+
+</web-app>
